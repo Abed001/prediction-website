@@ -6,6 +6,7 @@
 }
 
 .hero-section{
+    min-height: 30vh;
     background-image:url(./images/CUTE.jpg);
     display: flex;
     justify-content: center;
@@ -19,4 +20,24 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
+}
+.custom-img{
+    padding: 100px 0px;
+    border-radius: 100px;
+}
+
+.heading{
+    padding-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.input-res{
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+}
+.button-sub{
+   color: aqua;
+    
 }

@@ -8,7 +8,7 @@ const btndog = document.getElementById("button");
 const btnsub = document.getElementById("button-sub");
 let inputid = document.getElementById("inputId");
 
-//btndog.addEventListener('click',getRandomDog);
+
 
 
     function getGender(){
@@ -16,10 +16,10 @@ let inputid = document.getElementById("inputId");
             const response= fetch( `https://api.genderize.io?name=${textinput}`).
             then(response=>response.json())
             .then(data=>{
-                paragender.innerHTML=`<p>${data.gender}</p>`;
+                paragender.innerHTML=`<p> ${data.gender} ,</p>`;
             })
             
-            //console.log(data);
+            
             }
             
     function getAge(){
@@ -27,10 +27,10 @@ let inputid = document.getElementById("inputId");
             const response= fetch( ` https://api.agify.io/?name=${textinput}`).
             then(response=>response.json())
             .then(data=>{
-                paraage.innerHTML=`<p>${data.age}</p>`;
+                paraage.innerHTML=`<p>${data.age} ,</p>`;
             })
             
-            //console.log(data);
+            
             }
 
            function getNationality(){
@@ -41,7 +41,7 @@ let inputid = document.getElementById("inputId");
                        paranation.innerHTML=`<p>${data.country[0].country_id} , ${data.country[1].country_id}</p>`;
                     })
             
-                    //console.log(data);
+                   
                     }
 
 
@@ -53,7 +53,7 @@ let inputid = document.getElementById("inputId");
                        
                     })
                 }
-                // getGender()
+                
                 getRandomDog()
                 btnsub.addEventListener('click',getGender);
                 btnsub.addEventListener('click',getAge);
