@@ -38,43 +38,26 @@ let inputid = document.getElementById("inputId");
                     const response= fetch( `https://api.nationalize.io/?name=${textinput}`).
                     then(response=>response.json())
                     .then(data=>{
-                       paranation.innerHTML=`<p>${data.country[0].country_id +  data.country[1].country_id}</p>`;
+                       paranation.innerHTML=`<p>${data.country[0].country_id} , ${data.country[1].country_id}</p>`;
                     })
             
                     //console.log(data);
                     }
 
 
-                    
-          /*  function getNationality(){
-                const textinput=inputid.value.trim();
-                    const response= fetch( `https://api.nationalize.io/?name=${textinput}`).
-                    then(response=>response.json())
+                function getRandomDog(){
+                    fetch(url).
+                    then(res=>res.json())
                     .then(data=>{
-                      // let breedsObject = data.country;
-                      let breedsobject=JSON.parse(data.country)[1].country_id;
-                       // breedsObject=JSON.stringify(breedsObject);
-                      //  const breedsArray = Object.keys(breedsObject);
-                       // for (let i = 0; i < 2; i++) {
-                          
-                      paranation.innerHTML=`<p>${breedsobject}</p>`;//}
+                        dog.innerHTML=`<img src="${data.message}"/>`
+                       
                     })
-                    
-                    //console.log(data);
-                    }*/
-    
-function getRandomDog(){
-    fetch(url).
-    then(res=>res.json())
-    .then(data=>{
-        dog.innerHTML=`<img src="${data.message}"/>`
-    })
-}
-// getGender()
-getRandomDog()
-btnsub.addEventListener('click',getGender);
-btnsub.addEventListener('click',getAge);
-btnsub.addEventListener('click',getNationality);
+                }
+                // getGender()
+                getRandomDog()
+                btnsub.addEventListener('click',getGender);
+                btnsub.addEventListener('click',getAge);
+                btnsub.addEventListener('click',getNationality);
 
 }
         
