@@ -16,11 +16,7 @@
     background-size: cover;
 }
 
-.hero-section.input{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
+
 .custom-img{
     padding: 100px 0px;
     border-radius: 100px;
@@ -33,11 +29,12 @@
 }
 
 .input-res{
-    padding: 20px;
-    display:flex;
-    justify-content: center;
+    padding: 30px;
+  background-color:#6cb57e;
+  display: flex;
+  justify-content: center;
 }
 .button-sub{
-   color: aqua;
-    
+    width: 50px;
+    border-radius: 8px;
 }
