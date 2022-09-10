@@ -1,6 +1,7 @@
 window.onload = () => {
 const url="https://dog.ceo/api/breeds/image/random";
 const dog=document.getElementById("img");
+
 const paragender = document.getElementById("para-gender");
 const paraage = document.getElementById("para-age");
 const paranation = document.getElementById("para-nation");
@@ -61,5 +62,6 @@ let inputid = document.getElementById("inputId");
 
 }
         
+
 
 
